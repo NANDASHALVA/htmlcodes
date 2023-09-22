@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>pseudo element</title>
+        <style type="text/css">
+            /*h1::first-letter {
+                font-family:Lucida Calligraphy;
+                font-size: 50px;
+                color: red;
+                text-shadow:5px 8px 9px rgb(5, 237, 20);
+            }*/
+            /*h1::first-line{
+                background-color: paleturquoise;
+                color: gold;
+                font-family:Lucida Calligraphy;
+                text-shadow: 5px 8px 9px red;
+                font-size: 1cm;
+            }*/
+            /*h1::after{
+                content: " SRH ";
+                color: orange;
+            }*/
+            /*h1::before{
+                content: " SRH ";
+                color: orange;
+            }*/
+            /*h1::selection{
+                color:red;
+                background-color: lightpink;
+            }*/
+            /*h1::cursor{
+                color: orangered;
+            }*/
+            #curvedarrow{
+                margin: 0 auto;
+                position: relative;
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-right: 10px solid red;
+                transform: rotate(30pdeg);
+            }
+            #curvedarrow::after{
+                content: "";
+                position: absolute;
+                border:0 solid transparent;
+                border-top: 3px solid red;
+                border-radius: 20px 0 0;
+                top:-12px;
+                left:-9px;
+                width:15px;
+                height: 15px;
+                transform: rotate(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;"> NANDA SHALVA</h1>
+        <h2 style="color: yellowgreen;">EEE-A,MREC</h2>
+        <div id="curvedarrow"></div>
+    </body>
+</html>
